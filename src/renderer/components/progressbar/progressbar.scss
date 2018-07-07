@@ -1,0 +1,36 @@
+@charset "UTF-8";
+
+@import "../../colours";
+
+.progress-bar
+{
+    display: inline-block;
+    background-color: $launcher-background-color;
+    //width: 200pt;
+    //height: 12pt;
+    border-radius: 6pt;
+    overflow: hidden; //In case we go over 100%
+}
+
+.progress-bar-interior
+{
+    position: relative;
+    background-color: white; //This should never be seen
+    border-radius: 6pt;
+    height: 100%;
+}
+
+.progress-bar-interior.normal
+{
+    background-color: green;
+}
+
+.progress-bar-interior.paused
+{
+    background-color: yellow;
+}
+
+.progress-bar-interior.stopped
+{
+    background-color: red;
+}

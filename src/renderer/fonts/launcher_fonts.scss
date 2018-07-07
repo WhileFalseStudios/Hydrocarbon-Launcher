@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+@font-face
+{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    src: url('./fonts/SourceSansPro-Regular.ttf') format('ttf');
+}
+
+@font-face
+{
+    font-family: 'Source Sans Pro';
+    font-style: bold;
+    font-weight: 700;
+    src: url('./fonts/SourceSansPro-Bold.ttf') format('ttf');
+}
+
+@font-face
+{
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+    font-weight: 400;
+    src: url('./fonts/SourceSansPro-Italic.ttf') format('ttf');
+}

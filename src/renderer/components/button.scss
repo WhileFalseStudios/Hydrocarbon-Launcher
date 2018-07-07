@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+@import "../colours";
+
+$button-color-transition-time: 0.2s;
+
+@mixin button-color-transition
+{
+    transition: background-color $button-color-transition-time ease-in-out;
+}
+
+button
+{
+    border: none;
+    text-decoration: none;
+    display: inline-block;
+    background-color: $launcher-button-color;
+    text-align: center;
+    border-radius: 8pt;
+    cursor: pointer;
+    @include button-color-transition();
+}
+
+button:disabled
+{
+    opacity: 0.6;
+}
+
+button:hover
+{
+    background-color: $launcher-button-color-hover;
+    @include button-color-transition();
+}
+
+button:focus
+{
+    outline: 0;
+    background-color: $launcher-button-color-hover;
+}
+
+button.button-window-control
+{
+    background-color: transparent;
+    @include button-color-transition();
+}
+
+button.button-window-control:hover
+{
+    background-color: $launcher-button-color;
+    @include button-color-transition();
+}

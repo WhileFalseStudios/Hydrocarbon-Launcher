@@ -1,0 +1,21 @@
+@charset "UTF-8";
+
+@import "../../colours";
+
+$launcher-statusbar-height: 20pt;
+$launcher-statusbar-padding: 10pt;
+
+#statusbar
+{
+    flex: 0 1 $launcher-statusbar-height; //New flex-box app layout
+    background-color: $launcher-titlebar-color;
+    padding-left: $launcher-statusbar-padding;
+    padding-right: $launcher-statusbar-padding;
+    font-size: 11pt;
+    line-height: $launcher-statusbar-height;
+}
+
+#statusbar span
+{
+    margin-right: 10pt;
+}

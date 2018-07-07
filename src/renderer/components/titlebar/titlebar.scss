@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+@import "../../colours";
+
+$launcher-titlebar-height: 28pt;
+
+/** App titlebar */
+#titlebar
+{
+    //position: absolute;
+    background-color: $launcher-titlebar-color;
+    //left: 0;
+    //top: 0;
+    //right: 0;
+    //height: $launcher-titlebar-height;
+    flex: 0 1 $launcher-titlebar-height; // Flex-box app layout
+    -webkit-app-region: drag;
+}
+
+#titlebar-window-controls
+{
+    display: block;
+    float: right;
+}
+
+#titlebar-window-controls-left
+{
+    display: block;
+    float: left;
+}
+
+/** Application name text. */
+@mixin titlebar-text
+{
+    font-size: 9pt;
+    line-height: $launcher-titlebar-height; //Centre the text vertically.
+}
+
+.titlebar-text-left
+{
+    @include titlebar-text();
+    margin-left: 30pt;
+}
+
+.titlebar-text-centred
+{
+    @include titlebar-text();
+    display: table;
+    margin: 0 auto;
+}

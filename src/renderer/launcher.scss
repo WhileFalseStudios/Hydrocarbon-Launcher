@@ -1,0 +1,57 @@
+@charset "UTF-8";
+
+@import "./util";
+@import "./colours";
+@import "./ripple/ripple";
+
+*
+{
+    font-family: 'Source Sans Pro', sans-serif;
+    color: $launcher-text-color;
+    user-select: none;
+    -webkit-user-select: none;
+}
+
+body
+{
+    background-color: $launcher-background-color;
+}
+
+html, body
+{
+    padding: 0;
+    margin: 0;
+    height: 100%;
+}
+
+@import "./fonts/launcher_fonts";
+@import "./fonts/material_icons";
+
+@import "./components/button";
+@import "./components/tabbedcontainer/tabbedcontainer";
+@import "./components/titlebar/titlebar";
+@import "./components/statusbar/statusbar";
+@import "./components/progressbar/progressbar";
+
+#app
+{
+    height: 100%;
+}
+
+#app-content
+{
+    //position: absolute;
+    //left: 0;
+    //right: 0;
+    //top: $launcher-titlebar-height;
+    //bottom: $launcher-statusbar-height;
+    flex: 1 1 auto;
+    display: flex;
+}
+
+.app-flex-box
+{
+    display: flex;
+    flex-flow: column;
+    height: 100%;
+}

@@ -1,0 +1,8 @@
+@charset "UTF-8";
+
+/** Mark text as selectable */
+.selectable
+{
+    user-select: auto;
+    -webkit-user-select: auto;
+}

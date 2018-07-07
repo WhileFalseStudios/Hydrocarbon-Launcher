@@ -1,0 +1,45 @@
+{
+  "name": "hydrocarbon-launcher",
+  "displayName": "Hydrocarbon Launcher",
+  "version": "1.0.0",
+  "description": "Launcher and installer for Hydrocarbon",
+  "homepage": "https://github.com/WhileFalseStudios/Hydrocarbon-Launcher",
+  "main": "./dist/main/main.js",
+  "scripts": {
+    "test": "electron ./",
+    "compile": "electron-webpack"
+  },
+  "author": "While False Studios",
+  "contributors": [
+    {
+      "name": "Andrew Castillo",
+      "email": "valax321@gmail.com"
+    }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WhileFalseStudios/Hydrocarbon-Launcher.git"
+  },
+  "license": "GPL-3.0-or-later",
+  "devDependencies": {
+    "@types/electron": "^1.6.10",
+    "@types/react": "^16.4.2",
+    "@types/react-dom": "^16.0.6",
+    "electron": "^2.0.3",
+    "electron-packager": "^12.1.0",
+    "electron-webpack": "^2.1.2",
+    "electron-webpack-ts": "^2.0.2",
+    "node-sass": "^4.9.0",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "sass-loader": "^7.0.3",
+    "typescript": "^2.9.2",
+    "webpack": "^4.14.0"
+  },
+  "dependencies": {
+    "ajv": "^6.5.2",
+    "react-markdown": "^3.3.4",
+    "tslint": "^5.10.0",
+    "update-electron-app": "^1.3.0"
+  }
+}

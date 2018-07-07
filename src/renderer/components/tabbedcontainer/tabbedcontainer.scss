@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+@import "../../colours";
+
+.tab-container
+{
+    display: flex;
+    flex-direction: column;
+    //height: 100%; //Doesn't work properly when using flex-box
+    flex: 1 1 auto;
+}
+
+.tab-button
+{
+    border-radius: 0;
+    margin-left: 0;
+    margin-right: 0;
+    min-width: 75pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    height: 30pt;
+    font-size: 12pt;
+}
+
+.tab-icon
+{
+    line-height: 30pt;
+    margin-right: 7pt;
+}
+
+.tab-text
+{
+    line-height: 30pt;
+    text-align: right;
+    display: block;
+    float: right;
+}
+
+.tab-header
+{
+    background-color: $launcher-panel-color;
+    width: 100%;
+    flex: 0 0 auto;
+}
+
+// Actually looks better without these I think.
+// .tab-button.lhs
+// {
+//     border-top-left-radius: 8pt;
+// }
+
+// .tab-button.rhs
+// {
+//     border-top-right-radius: 8pt;
+// }
+
+.tab-button.selected
+{
+    transition: background-color 0.2s ease-in-out;
+    background-color: $launcher-background-color;
+}
+
+.tab-body
+{
+    flex: 1 1 auto;
+    width: 100%;
+}
